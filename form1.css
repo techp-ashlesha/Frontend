@@ -21,17 +21,23 @@ form{
 }
 
 .logo {
-    width:72%;
-    position: absolute;
+    width:74%;
+    position: relative;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     text-align: center;
     padding: 20px 80px;
+    justify-content: center;
+    gap:10px;
+    align-items:center;
+    display:flex;
+
 
 }
 
 .logo-img {
     width: 50px;
+    height:auto;
 }
 
 .logo-txt {
@@ -51,13 +57,18 @@ form{
 }
 
 .form-container{
-    box-shadow: 0 6px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 5px rgba(10, 8, 8, 0.255);
     display: flex;
     flex-direction: column;
     justify-content:center;
     background-color: rgb(186, 183, 183);
     width:100%;
 }
+
+.form-container h3{
+    text-align: center;
+}
+
 h2 {
     padding-left: 40px;
     font-size: 24px;
@@ -68,7 +79,7 @@ h3 {
     font-size: 16px;
     margin-top: 20px;
     margin-left:15px;
-    padding-left: 40px;
+    padding-left: 3px;
 }
 
 h3 a {
@@ -79,8 +90,6 @@ h3 a {
 h3 a:hover {
     text-decoration: underline;
 }
-
-
 
 .form-row {
     display: flex;
@@ -116,11 +125,16 @@ input:focus {
     box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
     outline: none;
 }
+input:invalid{
+    border-color: red;
+    box-shadow: 0 0 5px rgba(243, 3, 3, 0.5);
+    outline:none;
+}
 
 button {
     width: 20%;
     padding: 12px;
-    padding-left: 40px;
+    
     background-color: #596D48;
     color: white;
     font-size: 16px;
@@ -128,11 +142,10 @@ button {
     border: none;
     border-radius: 5px;
     margin-left: 15px;
-    margin-top: 15px;;
+    margin-top: 15px;
+    text-align: center;
 }
 
 button:hover {
     background-color: #4a5d39;
 }
-
-
